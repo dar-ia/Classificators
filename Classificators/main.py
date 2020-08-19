@@ -13,7 +13,7 @@ data_set = ds.load_digits()
 x = data_set.data
 y = data_set.target
 
-X_train, X_test, y_train, y_test = train_test_split(x, y, test_size=0.2, random_state=0)
+X_train, X_test, y_train, y_test = train_test_split(x, y, test_size=0.3, random_state=0)
 
 neighbors_model = KNeighborsClassifier(n_neighbors=3)
 bayes_model = naive_bayes()
